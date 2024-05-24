@@ -55,7 +55,33 @@ class ListaDeTareas:    # defino la clase ListaDeTareas, con su constructor y su
                 print(f"{indice}. {Fore.CYAN}{tarea}{Style.RESET_ALL}") # si está sin completar la pinto de cian
 
 
-#                     ****************************IMPRIMIMOS EL MENU PRINCIPAL***********************************
+def mostrar_menu():
+    print()
+    menu_width = 40  # Ancho del menú
+    title = "Lista de tareas"
+    title_length = len(title)
+    left_padding = (menu_width - title_length) // 2  # Espaciado izquierdo
+    right_padding = menu_width - title_length - left_padding - 2 # Espaciado derecho
+
+    # Imprime el marco superior
+    print("╔" + "═" * (menu_width - 2) + "╗")
+    # Imprime el título centrado
+    print("║" + " " * left_padding + Fore.MAGENTA + title + Style.RESET_ALL + " " * right_padding + "║")
+    #print("║" + " " * left_padding + title + " " * right_padding + "║")
+    # Imprime el separador
+    print("╠" + "═" * (menu_width - 2) + "╣")
+    # Imprime las opciones del menú
+    print("║" + " " * (menu_width - 2) + "║")
+    print("║" + Fore.BLUE + "1. Agregar tarea" + " " * 22 + Style.RESET_ALL + "║")
+    print("║" + Fore.BLUE + "2. Mostrar todas las tareas" + " " * 11 + Style.RESET_ALL + "║")
+    print("║" + Fore.BLUE + "3. Marcar tarea como completada" + " " * 7 + Style.RESET_ALL + "║")
+    print("║" + Fore.RED + "4. Eliminar tarea" + " " * 21 + Style.RESET_ALL + "║")
+    print("║" + Fore.BLUE + "5. Salir" + " " * 30 + Style.RESET_ALL + "║")
+    # Imprime el marco inferior
+    print("╚" + "═" * (menu_width - 2) + "╝")
+
+
+"""                    ****************************IMPRIMIMOS EL MENU PRINCIPAL***********************************
 
 def mostrar_menu():    
     print(Fore.MAGENTA + Style.BRIGHT + "\n                      ------- Lista de Tareas -------")
@@ -65,7 +91,7 @@ def mostrar_menu():
     print(Fore.BLUE + "3. Marcar tarea como completada")
     print(Fore.RED + "4. Eliminar tarea")
     print(Fore.BLUE + "5. Salir")
-
+"""
 
 #                    *****************************PARTE PRINCIPAL DEL PROGRMA*********************************
 def main():
