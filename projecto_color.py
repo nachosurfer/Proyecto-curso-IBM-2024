@@ -80,19 +80,6 @@ def mostrar_menu():
     # Imprime el marco inferior
     print("╚" + "═" * (menu_width - 2) + "╝")
 
-
-"""                    ****************************IMPRIMIMOS EL MENU PRINCIPAL***********************************
-
-def mostrar_menu():    
-    print(Fore.MAGENTA + Style.BRIGHT + "\n                      ------- Lista de Tareas -------")
-    print()
-    print(Fore.BLUE + "1. Agregar tarea")
-    print(Fore.BLUE + "2. Mostrar todas las tareas")
-    print(Fore.BLUE + "3. Marcar tarea como completada")
-    print(Fore.RED + "4. Eliminar tarea")
-    print(Fore.BLUE + "5. Salir")
-"""
-
 #                    *****************************PARTE PRINCIPAL DEL PROGRMA*********************************
 def main():
     lista_de_tareas = ListaDeTareas() # creamos una instancia de la clase ListaDeTareas()
